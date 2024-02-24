@@ -1,0 +1,42 @@
+const Gpio = require('pigpio').Gpio;
+
+// Set up GPIO pins for the motor driver
+const in1 = new Gpio(17, {mode: Gpio.OUTPUT});
+const in2 = new Gpio(27, {mode: Gpio.OUTPUT});
+const in3 = new Gpio(22, {mode: Gpio.OUTPUT});
+const in4 = new Gpio(23, {mode: Gpio.OUTPUT});
+
+// Set up PWM pins for the motor speed control
+const enableA = new Gpio(18, {mode: Gpio.OUTPUT});
+const enableB = new Gpio(24, {mode: Gpio.OUTPUT});
+
+// Set initial motor speed to 0 (off)
+enableA.pwmWrite(0);
+enableB.pwmWrite(0);
+
+// Function to set the speed and direction of the motors
+function setMotorSpeed(speedA, speedB, dirA, dirB) {
+  // Set the speed of each motor
+  enableA.pwmWrite(speedA);
+  enableB.pwmWrite(speedB);
+
+  // Set the direction of each motor
+  if (dirA === 'forward') {
+    in1.digitalWrite(1);
+    in2.digitalWrite(0);
+  } else if (dirA === 'reverse') {
+    in1.digitalWrite(0);
+    in2.digitalWrite(1);
+  }
+
+  if (dirB === 'forward') {
+    in3.digitalWrite(1);
+    in4.digitalWrite(0);
+  } else if (dirB === 'reverse') {
+    in3.digitalWrite(0);
+    in4.digitalWrite(1);
+  }
+}
+
+// Example usage: Set motor A to spin forward at 50% speed, and motor B to spin in reverse at 75% speed
+setMotorSpeed(128, 191, 'forward', 'reverse');

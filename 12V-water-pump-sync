@@ -1,0 +1,23 @@
+const Gpio = require('pigpio').Gpio;
+
+// Connect to the relay module on pin 17
+const relay = new Gpio(17, { mode: Gpio.OUTPUT });
+
+// Function to turn the water pump on
+function turnOnPump() {
+  relay.digitalWrite(1); // set pin to high to turn on pump
+  console.log('Water pump turned on');
+}
+
+// Function to turn the water pump off
+function turnOffPump() {
+  relay.digitalWrite(0); // set pin to low to turn off pump
+  console.log('Water pump turned off');
+}
+
+// Example usage: turn on the pump for 5 seconds, then turn it off
+turnOnPump();
+setTimeout(() => {
+  turnOffPump();
+}, 5000);
+

@@ -1,0 +1,69 @@
+To run two motors at the same time, you will need the following components:
+
+    Raspberry Pi board
+    Motor driver board (e.g. L298N, TB6612FNG, or DRV8833)
+    Two DC motors
+    Power source (battery pack or power supply)
+    Jumper wires
+    Breadboard (optional)
+
+Here's a brief overview of each component:
+
+    Raspberry Pi board: This is the main controller that will be used to control the motors. You can use any Raspberry Pi model, but make sure it has enough GPIO pins to connect to the motor driver board.
+
+    Motor driver board: This board will be used to control the speed and direction of the motors. There are many different types of motor driver boards available, but some popular ones are the L298N, TB6612FNG, and DRV8833. These boards allow you to control the motors using PWM signals and provide H-bridge circuits to control the direction of the motors.
+
+    Two DC motors: You will need two DC motors to run them at the same time. Make sure the motors are compatible with the motor driver board you are using.
+
+    Power source: You will need a power source to power the motors and the motor driver board. Depending on the voltage and current requirements of your motors, you may need a battery pack or a power supply.
+
+    Jumper wires: You will need jumper wires to connect the Raspberry Pi to the motor driver board and to connect the motor driver board to the motors.
+
+    Breadboard (optional): You can use a breadboard to make it easier to connect the components together, but it is not necessary.
+
+Once you have these components, you can follow the instructions provided by the motor driver board manufacturer to connect the motors and the power source to the motor driver board, and then connect the motor driver board to the Raspberry Pi using jumper wires. Finally, you can write a program in Python or another programming language to control the motors using the GPIO pins on the Raspberry Pi.
+
+
+
+
+Sure, here are the exact components you will need to build a Raspberry Pi controller for a 20V DC motor that can spin forwards, backwards, and synchronize the last position of rotation:
+
+    Raspberry Pi 4 Model B or Raspberry Pi 3 Model B+
+    Raspberry Pi Pico
+    L298N Dual H-Bridge Motor Driver Board
+    20V DC Motor (with suitable current rating and torque for your application)
+    Rotary Encoder with push button
+    Breadboard and jumper wires
+    12V power supply with suitable current rating for your motor (you may need to use a voltage regulator to step down the voltage to 5V for the Raspberry Pi and 3.3V for the Raspberry Pi Pico)
+
+Here are the specific models that you can purchase:
+
+    Raspberry Pi 4 Model B: Raspberry Pi part number RASPBERRY PI 4 MODEL B/4GB
+
+    Raspberry Pi 3 Model B+: Raspberry Pi part number RASPBERRY PI 3 MODEL B+
+
+    Raspberry Pi Pico: Raspberry Pi part number RASPBERRY-PI-PICO
+
+    L298N Dual H-Bridge Motor Driver Board: Any of the following models will work:
+
+    Aokin L298N Dual H Bridge Stepper Motor Driver Board: Model number 43235-226646
+    SMAKN L298N Dual H Bridge DC Stepper Motor Drive Controller Board Module: Model number 8541587001
+
+    20V DC Motor: You will need to choose a motor with the appropriate specifications for your application, such as voltage rating, current rating, and torque. Here are a few examples:
+
+    Yeeco 775 DC Motor: Model number B1800049
+    RioRand 12V DC Motor: Model number RR-12V-MOTOR-1
+
+    Rotary Encoder with push button: Any of the following models will work:
+
+    KEYESTUDIO KY-040 Rotary Encoder Module
+    ALPS STEC11B03 Encoder
+
+    Breadboard and jumper wires: You can use any standard breadboard and jumper wires.
+
+    12V power supply: You will need to choose a power supply with the appropriate voltage and current rating for your motor. Here are a few examples:
+
+    MEAN WELL GS60A12-P1J AC to DC Power Supply: Model number GS60A12-P1J
+    Omron S8VS-06024 AC to DC Power Supply: Model number S8VS-06024
+
+Note that these are just a few examples of the components you can use, and there may be other models or brands that work just as well. Be sure to check the specifications of each component carefully before purchasing to ensure that they meet your requirements.

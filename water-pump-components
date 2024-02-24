@@ -1,0 +1,19 @@
+    Arduino board: You can use any Arduino board such as the Arduino UNO, Arduino Nano, or Arduino Mega.
+
+    Motor driver: A motor driver is used to control the speed and direction of the motor. You can use an L293D motor driver for this purpose.
+
+    DC motor: You will need a DC motor that can generate enough power to pump water through the 3.5 cm plastic lines. You can use a 12V DC motor with a suitable torque rating.
+
+    Power supply: You will need a power supply to power the Arduino board, motor driver, and DC motor. A 12V power supply should be sufficient for this project.
+
+    Relay module: A relay module is used to switch the motor on and off. You can use a 5V relay module for this purpose.
+
+    Water pump: You will need a water pump that is suitable for use with 3.5 cm plastic lines. You can choose a suitable pump based on the flow rate and head requirements of your system.
+
+    Tubing: You will need 3.5 cm plastic tubing to connect the water pump to the water source and the output to the destination.
+
+    Breadboard and jumper wires: You will need a breadboard and jumper wires to connect the Arduino board, motor driver, and relay module.
+
+    Sensors (optional): You can add sensors such as flow sensors, pressure sensors, or level sensors to monitor the water flow and pressure in the system.
+
+Note: It's important to follow proper safety precautions when working with water and electricity. Always use appropriate safety equipment and make sure to consult with a professional if you're unsure about any aspect of the project.
